@@ -14,6 +14,7 @@ dependencies = [
     "python-dotenv==1.0.1",
     "chainlit==1.2.0",
     "crewai==0.55.2",
+    "openpyxl",
     "langchain",
     "langchain-core",
     "langchain-community",
