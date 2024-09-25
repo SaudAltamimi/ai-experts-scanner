@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-expers-scanner"
+version = "0.1.0"
+description = ""
+authors = [{name = "Sequential Lab"}]
+license = {text = "MIT"}
+requires-python = ">=3.7"
+dependencies = [
+    "pandas==2.2.2",
+    "python-dotenv==1.0.1",
+    "chainlit==1.2.0",
+    "crewai==0.55.2",
+    "langchain",
+    "langchain-core",
+    "langchain-community",
+    "langchain-anthropic",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src/ai-experts-scanner"]
