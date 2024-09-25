@@ -28,7 +28,7 @@ def search_company_info(company_name: str) -> str:
 def search_person_info(person_name: str, company_name: str, info_type: str) -> str:
     query = "{person_name} {company_name} {info_type}"
     prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are an expert in extracting information about key people in companies. "
+    ("system", "You are an expert in extracting information about key people in successful AI companies. "
                "Extract relevant information about that Person"),
     ("human", query)
     ])
