@@ -50,7 +50,7 @@ def analyze_company_key_people(company_name: str) -> CompanyData:
             "text": importance_info
         })
         
-        person.background = background
-        person.importance = importance
+        person.background = background.content
+        person.importance = importance.content
     
     return company_data
