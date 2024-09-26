@@ -20,4 +20,15 @@ source venv/bin/activate # On Windows, Use `venv\Scripts\activate`
 ```bash
 pip install -e ".[dev]"
 ```
-
+```python
+# Example usage
+company_name = "anthropic"
+result = analyze_company_key_people(company_name)
+print(f"Analysis for {company_name}:")
+print(f"Number of key people identified: {len(result.key_people)}")
+for person in result.key_people:
+    print(f"\nName: {person.name}")
+    print(f"Role: {person.role}")
+    print(f"Background: {person.background}")
+    print(f"Importance: {person.importance}")
+```
