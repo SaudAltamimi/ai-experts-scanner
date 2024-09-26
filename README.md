@@ -21,6 +21,8 @@ source venv/bin/activate # On Windows, Use `venv\Scripts\activate`
 pip install -e ".[dev]"
 ```
 ```python
+from ai_experts_scanner.scanner import analyze_company_key_people
+
 # Example usage
 company_name = "anthropic"
 result = analyze_company_key_people(company_name)
